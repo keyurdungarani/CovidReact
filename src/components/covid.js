@@ -9,10 +9,11 @@ const Covid = () => {
     try {
       const responce = await fetch('https://data.covid19india.org/data.json')
       const actualData = await responce.json()
-      console.log(actualData.statewise[0])
+      console.log(actualData.statewise[0])   
       setData(actualData.statewise[0])
     } catch (err) {
       console.log("err")
+      console.log("Dikshit")
     }
   }
 
